@@ -1,75 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https: //fonts.googleapis.com/css?family=Barlow" rel="stylesheet" type="text/css" />
+    <link href="https: //fonts.googleapis.com/css?family=Fraunces" rel="stylesheet" type="text/css" />
+    <link type="stylesheet" href="nexus.css">
+
     <title>Proyecto Nexos</title>
-    <a link="stylesheet" href="nexus.css"> 
+
 </head>
+
 <body>
 
     <nav>
         <div class="navegacion">
-            <img src="img.logo" alt="">
+            <div><img src="img.logo" alt=""></div>
             <ul>
-                <li><a href="0">Nosotros</a></li>
-                <li><a href="0">Noticias</a></li>
-                <li><a href="0">Ayuda</a></li>
-                <li><a href="0">Ingresar</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Ayuda</a></li>
             </ul>
+            <input class="btn-ingresar" type="button" title="INGRESAR" value=""></input>
         </div>
     </nav>
 
     <header>
         <div class="header">
             <img src="img.back" alt="">
-            <h1>Actua para cambiar el mundo<h1>
-            <h3>Lorem impsu</h3>
+        </div>
+        <div>
+            <h1>Actua para cambiar el mundo</h1>
+            <p>Lorem impsu</p>
         </div>
     </header>
 
-    <main class="nosotros">
-        <div> <h2> Soluciones para empresas </h2>
-            <h3>Lorem impsu</h3>
-            <img src="img.nos1"  alt="">
-        </div>
-        
-        <div>
-            <h2>Soluciones para organizaciones</h2>
-            <h3>Lorem impsu</h3>
-            <img src="img.nos1"  alt="">
+    <main>
+        <div class="seccion-nosotros">
+            <div>
+                <h2> Soluciones para empresas </h2>
+                <p>Lorem impsu</p>
+                <img src="img.nos1" alt="" />
+            </div>
 
-        </div>
+            <div>
+                <h2>Soluciones para organizaciones</h2>
+                <p>Lorem impsu</p>
+                <img src="img.nos1" alt="" />
 
-        <div>
-            <h1>Encuentra las mejores oportunidades</h1>
-            <h3>Lorem impsu</h3>
-            <ul>
-                <li>Ser Voluntario</li>
-                <li>Donar</li>
-                <li>Reciclar</li>
-                <li>Llamados laborales</li>
-            </ul>
+            </div>
+
+            <div>
+                <h2>Encuentra las mejores oportunidades</h2>
+                <p>Lorem impsu</p>
+                <div class="container">
+                    <div>Ser Voluntario</div>
+                    <div>Donar</div>
+                    <div>Reciclar</div>
+                    <div>Llamados laborales</div>
+                </div>
+            </div>
+        </div>
+        <div class="seccion-noticias">
+            <div>
+                <h2>Noticias</h2>
+                <a href="">Ver todas</a>
+            </div>
+            <div class="carrousel">
+                <div class="card-noticia"></div>
+                <div class="card-noticia"></div>
+                <div class="card-noticia"></div>
+                <div class="card-noticia"></div>
+                <div class="card-noticia"></div>
+                <div class="card-noticia"></div>
+                <div class="card-noticia"></div>
+                <div class="card-noticia"></div>
+            </div>
+        </div>
+        <div class="seccion-contacto">
+            <div>
+                <h2>Contacto</h2>
+                <form>
+                    <div>
+                        <input name="name" class="required" placeholder="Nombre" title="Your name" type="text" />
+                        <p class="form-nombre">Ingrese su nombre.</p>
+                    </div>
+                    <div>
+                        <input name="mail" class="required" placeholder="correo@correo.com" title="Your mail"
+                            type="text" />
+                        <p class="form-email">Ingrese su correo.</p>
+                    </div>
+                    <div>
+                        <textarea name="message" class="required" placeholder="Su mensaje..." rows="3"></textarea>
+                        <p class="form-mensaje">Ingrese su comentario.</p>
+                    </div>
+                    <div>
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <div>
+                    <img src="/laptop-escritorio.jpg" title="img-contacto" />
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer class="Noticias">
+    <footer>
         <div>
-            <h1>Contacto</h1>
+            <img src="/logo-blanco.png" title="logo-footer" />
+        </div>
+        <div>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Nosotros</li>
+                <li>Noticias</li>
+                <li>Contacto</li>
+                <li>Terminos y condiciones</li>
             </ul>
         </div>
-
+        <div>
+            <p>Seguinos!</p>
+            <div>
+                <img src="/icon-facebook.svg" title="icon-fb" />
+                <img src="/icon-twitter.svg" title="icon-tw" />
+                <img src="/icon-instagram.svg" title="icon-ig" />
+            </div>
+        </div>
+        <div>
+            <p>Sitio desarrollado por Guzman Centurion y Joaquin Alonso</p>
+        </div>
     </footer>
-
-
-    
-    
-    
-    
 </body>
+
 </html>
