@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https: //fonts.googleapis.com/css?family=Barlow" rel="stylesheet" type="text/css" />
-    <link href="https: //fonts.googleapis.com/css?family=Fraunces" rel="stylesheet" type="text/css" />
+    <link href="https: //fonts.googleapis.com/css?family=DM Sans" rel="stylesheet" type="text/css" />
+
     <link type="stylesheet" href="nexus.css">
 
     <title>Proyecto Nexos</title>
@@ -20,9 +20,9 @@
         <div class="navegacion">
             <div><img src="img.logo" alt=""></div>
             <ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="seccion-nosotros">Nosotros</a></li>
+                <li><a href="seccion-noticias">Noticias</a></li>
+                <li><a href="seccion-contacto">Ayuda</a></li>
             </ul>
             <input class="btn-ingresar" type="button" title="INGRESAR" value=""></input>
         </div>
@@ -30,37 +30,67 @@
 
     <header>
         <div class="header">
-            <img src="img.back" alt="">
+            <img src="/manos.jpg" title="img-header" alt="">
         </div>
         <div>
-            <h1>Actua para cambiar el mundo</h1>
-            <p>Lorem impsu</p>
+            <h1>Actúa para cambiar el mundo!</h1>
+            <p>Fomentamos el vínculo entre empresas y organizaciones civiles para generar
+                un impacto positivo en las sociedad.<br />
+                Descubrí diferentes maneras de involucrar tu organización con la sociedad.
+            </p>
         </div>
     </header>
 
     <main>
         <div class="seccion-nosotros">
             <div>
+                <img src="oficina.png" title="img-nostros1" alt="" />
                 <h2> Soluciones para empresas </h2>
-                <p>Lorem impsu</p>
-                <img src="img.nos1" alt="" />
+                <p>Generamos un medio para que las empresas se involucren en actividades
+                    de responsabilidad social.<br />
+                    Creá un grupo de voluntarios en tu oraganización y se parte del cambio!
+                </p>
+
             </div>
 
             <div>
                 <h2>Soluciones para organizaciones</h2>
-                <p>Lorem impsu</p>
-                <img src="img.nos1" alt="" />
+                <p>Apoyamos a las organizaciones sociales para que alcancen sus objetivos.
+                    Ponemos a su disposición una comunidad de voluntarios dispuestos a apoyarlas
+                    en sus necesidades.<br />
+                    Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.
+                </p>
+                <img src="/voluntariado.jpg" title="img-nosotros2" alt="" />
 
             </div>
 
             <div>
                 <h2>Encuentra las mejores oportunidades</h2>
-                <p>Lorem impsu</p>
+                <p>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos
+                    y mediambientales), donde encontraras el que mejor se adapte a la experiencia que
+                    estas buscando.<br />
+                    Te ayudamos en la coordinación con la organización de forma simple y rápida.</p>
                 <div class="container">
-                    <div>Ser Voluntario</div>
-                    <div>Donar</div>
-                    <div>Reciclar</div>
-                    <div>Llamados laborales</div>
+                    <div id="box1">
+                        <img src="/icono-mas.png" title="icon1" alt="" />
+                        <img src="/icono-mano.png" title="icon2" alt="" />
+                        <h2>Ser Voluntario</h2>
+                    </div>
+                    <div id="box2">
+                        <img src="/icono-mas.png" title="icon3" alt="" />
+                        <img src="/icono-mano-corazon.png" title="icon4" alt="" />
+                        <h2>Donar</h2>
+                    </div>
+                    <div id="box3">
+                        <img src="/icono-mas.png" title="icon5" alt="" />
+                        <img src="/icono-reciclar.png" title="icon6" alt="" />
+                        <h2>Reciclar</h2>
+                    </div>
+                    <div id="box4">
+                        <img src="/icono-mas.png" title="icon7" alt="" />
+                        <img src="/icono-maletin.png" title="icon8" alt="" />
+                        <h2>Llamados laborales</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,14 +100,104 @@
                 <a href="">Ver todas</a>
             </div>
             <div class="carrousel">
-                <div class="card-noticia"></div>
-                <div class="card-noticia"></div>
-                <div class="card-noticia"></div>
-                <div class="card-noticia"></div>
-                <div class="card-noticia"></div>
-                <div class="card-noticia"></div>
-                <div class="card-noticia"></div>
-                <div class="card-noticia"></div>
+                <div class="card-noticia">
+                    <img src="/basura-oceano-playa.jpg" title="img-noticia1" alt="" />
+                    <input type="button" title="ecologia" value="ECOLOGIA" />
+                    <div>
+                        <img src="/icono-calendario.png" title="" alt="" />
+                        <img src="/icono-reloj.png" title="" alt="" />
+                        <h3><b>Microbios de la tierra y el océano están evolucionando para degradar
+                                el plástico</b></h3>
+                        <p>Hace poco más de cinco años, científicos excavaban el suelo y el lodo en
+                            los alrededores de un centro de reciclaje de plásticos en Japón y
+                            descubrieron una bacteria que se alimentaba del tipo de polímero llamado
+                            politereftalato de etileno (PET), utilizado en envases y botellas, por
+                            ejemplo, usándolo como fuente de energía para sobrevivir. Esta bacteria
+                            utiliza un par de enzimas que desarrolló intencionalmente para ello. En
+                            su momento fue un descubrimiento, aunque aislado, fantástico porque abría
+                            nuevos caminos para el reciclaje de las millones de toneladas de basura
+                            que lanzamos al medio ambiente todos los años. En 2018, un grupo de
+                            científicos en los EE. UU. Se basó en esta investigación para producir
+                            una enzima diseñada que podría consumir plásticos con alrededor de un 20
+                            por ciento más de eficiencia. Ese mismo equipo desarrolló una versión
+                            aún más avanzada en 2020, que describieron como una superenzima , que
+                            podría digerir los desechos plásticos a seis veces la velocidad.</p>
+                        <img src="/icono-flecha.png" title="" alt="" />
+                        <p>ver más</p>
+                    </div>
+                </div>
+                <div class="card-noticia">
+                    <img src="/obreros.jpg" title="img-noticia2" alt="" />
+                    <input type="button" title="economia" value="ECONOMIA" />
+                    <div>
+                        <img src="/icono-calendario.png" title="" alt="" />
+                        <img src="/icono-reloj.png" title="" alt="" />
+                        <h3><b>La tasa de desempleo en agosto se ubicó en 7,9%,
+                                unas 141.000 personas</b></h3>
+                        <p>Este miércoles 21 de septiembre, el INE presentó su informe mensual
+                            referido al mercado de trabajo. De acuerdo al estudio, en agosto de
+                            2022 para el total país la tasa de actividad se situó en 61,5%, la
+                            tasa de empleo en 56,6% y la tasa de desempleo en 7,9%. En Montevideo
+                            el desempleo fue de 7,6%, mientras que en el interior se ubicó en 8,2%.
+                            Los activos son 1.78530 personas, los ocupados 1.64360, y los desocupados
+                            141.000 personas. De acuerdo a los datos oficiales, a lo largo del año
+                            el desempleo fue el siguiente: En julio pasado la tasa de desempleo se
+                            ubicó en 8,1%, en junio 8,4% (el valor más alto en lo que va del año),
+                            en mayo fue 8,1%, en abril y en marzo se ubicó en 7,7%, en febrero 7,3
+                            y en enero 7,4%.
+                        </p>
+                        <img src="/icono-flecha.png" title="" alt="" />
+                        <p>ver más</p>
+                    </div>
+                </div>
+                <div class="card-noticia">
+                    <img src="/bioferia.jpg" title="img-noticia3" alt="" />
+                    <input type="button" title="ecologia" value="ECOLOGIA" />
+                    <div>
+                        <img src="/icono-calendario.png" title="" alt="" />
+                        <img src="/icono-reloj.png" title="" alt="" />
+                        <h3><b>Segunda edición de Bioferia los días 14, 15 y 16
+                                de octubre en Parque Grauert</b></h3>
+                        <p>El evento busca expandir su propósito de contribuir con
+                            los Objetivos de Desarrollo Sostenible (ODS), conectando con la comunidad y
+                            acelerando la transición hacia una economía circular y sustentable, que
+                            deje atrás la lógica de descarte. Bioferia ha sido declarada de interés
+                            por el Ministerio de Ambiente, cuenta con el apoyo del Pacto Global, ONU
+                            Mujeres, Sistema B y Programa Sembrando, entre otras instituciones y media
+                            partners. Durante los tres días de Bioferia, el público podrá asistir a
+                            talleres, workshops y charlas, además de conocer de primera mano
+                            emprendimientos y tendencias que contribuyen a un impacto positivo en
+                            diseño, moda, cocina, cultivo, nuevas arquitecturas, movilidad, energías
+                            renovables, turismo, diseño circular, reciclaje y compost, entre otras.
+                        </p>
+                        <img src="/icono-flecha.png" title="" alt="" />
+                        <p>ver más</p>
+                    </div>
+                </div>
+                <div class="card-noticia">
+                    <img src="/niños-pobreza.jpg" title="img-noticia4" alt="" />
+                    <input type="button" title="sociedad" value="SOCIEDAD" />
+                    <div>
+                        <img src="/icono-calendario.png" title="" alt="" />
+                        <img src="/icono-reloj.png" title="" alt="" />
+                        <h3><b>La pobreza en el Uruguay aumentó en el primer semestre de 2022.
+                                La primera infancia fue la más afectada</b></h3>
+                        <p>En el primer semestre de 2022, la pobreza en nuestro país fue del 10,7%, un
+                            incremento de 0,5% respecto al mismo periodo de 2021, de acuerdo a datos
+                            publicados este jueves por el Instituto Nacional de Estadística (INE). El
+                            organismo explicó que la incidencia de pobreza en hogares fue del 7,4%, o
+                            sea que de cada 1.000 familias, 74 no logran cubrir lo más mínimo que
+                            tiene que ver con sus necesidades alimentarias o de vivienda. En ese plazo
+                            de tiempo, la indigencia se ubicó en el 0,4%, y en cuanto a hogares en el
+                            0,3%. El año pasado, el primer indicador estaba en 0,3% y el segundo en
+                            0,2%, o sea que ambos aumentaron. La primera infancia es la franja
+                            etaria más afectada por la pobreza: en el primer semestre de 2021, 16,1%
+                            de los niños de 0 a 6 años sufrían este flagelo, mientras que en el mismo
+                            tracto de 2022 se constató un drástico aumento hasta llegar a los 22,5%.</p>
+                        <img src="/icono-flecha.png" title="" alt="" />
+                        <p>ver más</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="seccion-contacto">
@@ -85,17 +205,17 @@
                 <h2>Contacto</h2>
                 <form>
                     <div>
+                        <p class="form-nombre">Ingrese su nombre:</p>
                         <input name="name" class="required" placeholder="Nombre" title="Your name" type="text" />
-                        <p class="form-nombre">Ingrese su nombre.</p>
                     </div>
                     <div>
+                        <p class="form-email">Ingrese su correo:</p>
                         <input name="mail" class="required" placeholder="correo@correo.com" title="Your mail"
                             type="text" />
-                        <p class="form-email">Ingrese su correo.</p>
                     </div>
                     <div>
+                        <p class="form-mensaje">Ingrese su comentario:</p>
                         <textarea name="message" class="required" placeholder="Su mensaje..." rows="3"></textarea>
-                        <p class="form-mensaje">Ingrese su comentario.</p>
                     </div>
                     <div>
                         <button class="btn-enviar" type="submit">Enviar</button>
