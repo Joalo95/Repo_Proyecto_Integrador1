@@ -8,7 +8,23 @@
 
     <link href="https: //fonts.googleapis.com/css?family=DM Sans" rel="stylesheet" type="text/css" />
 
-    <link type="stylesheet" href="nexus.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="template-style.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <script>
+        const toggleModal = () => {
+            const bodyClassList = document.body.classList;
+
+            if (bodyClassList.contains("open")) {
+                bodyClassList.remove("open");
+                bodyClassList.add("closed");
+            } else {
+                bodyClassList.remove("closed");
+                bodyClassList.add("open");
+            }
+        };
+    </script>
 
     <title>Proyecto Nexos</title>
 
@@ -17,20 +33,28 @@
 <body>
 
     <nav>
-        <div class="navegacion">
-            <div><img src="img.logo" alt=""></div>
-            <ul>
-                <li><a href="seccion-nosotros">Nosotros</a></li>
-                <li><a href="seccion-noticias">Noticias</a></li>
-                <li><a href="seccion-contacto">Ayuda</a></li>
-            </ul>
-            <input class="btn-ingresar" type="button" title="INGRESAR" value=""></input>
+        <div class="nav-bar">
+            <div class="container nav-container">
+                <div><img src="/images/logo.png" alt=""></div>
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <input class="checkbox" type="checkbox" title="check" />
+                <div class="menu-items">
+                    <li><a href="#seccion-nosotros">Nosotros</a></li>
+                    <li><a href="#seccion-noticias">Noticias</a></li>
+                    <li><a href="#seccion-contacto">Ayuda</a></li>
+                    <li><button onclick="toggleModal()" title="ingresar" value="INGRESAR">INGRESAR</button></li>
+                </div>
+            </div>
         </div>
     </nav>
 
     <header>
         <div class="header">
-            <img src="/manos.jpg" title="img-header" alt="">
+            <img src="/images/manos.jpg" title="img-header" alt="">
         </div>
         <div>
             <h1>Actúa para cambiar el mundo!</h1>
@@ -44,7 +68,7 @@
     <main>
         <div class="seccion-nosotros">
             <div>
-                <img src="oficina.png" title="img-nostros1" alt="" />
+                <img src="/images/oficina.png" title="img-nostros1" alt="" />
                 <h2> Soluciones para empresas </h2>
                 <p>Generamos un medio para que las empresas se involucren en actividades
                     de responsabilidad social.<br />
@@ -60,7 +84,7 @@
                     en sus necesidades.<br />
                     Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.
                 </p>
-                <img src="/voluntariado.jpg" title="img-nosotros2" alt="" />
+                <img src="/images/voluntariado.jpg" title="img-nosotros2" alt="" />
 
             </div>
 
@@ -72,23 +96,23 @@
                     Te ayudamos en la coordinación con la organización de forma simple y rápida.</p>
                 <div class="container">
                     <div id="box1">
-                        <img src="/icono-mas.png" title="icon1" alt="" />
-                        <img src="/icono-mano.png" title="icon2" alt="" />
+                        <img src="/images/icono-mas.png" title="icon1" alt="" />
+                        <img src="/images/icono-mano.png" title="icon2" alt="" />
                         <h2>Ser Voluntario</h2>
                     </div>
                     <div id="box2">
-                        <img src="/icono-mas.png" title="icon3" alt="" />
-                        <img src="/icono-mano-corazon.png" title="icon4" alt="" />
+                        <img src="/images/icono-mas.png" title="icon3" alt="" />
+                        <img src="/images/icono-mano-corazon.png" title="icon4" alt="" />
                         <h2>Donar</h2>
                     </div>
                     <div id="box3">
-                        <img src="/icono-mas.png" title="icon5" alt="" />
-                        <img src="/icono-reciclar.png" title="icon6" alt="" />
+                        <img src="/images/icono-mas.png" title="icon5" alt="" />
+                        <img src="/images/icono-reciclar.png" title="icon6" alt="" />
                         <h2>Reciclar</h2>
                     </div>
                     <div id="box4">
-                        <img src="/icono-mas.png" title="icon7" alt="" />
-                        <img src="/icono-maletin.png" title="icon8" alt="" />
+                        <img src="/images/icono-mas.png" title="icon7" alt="" />
+                        <img src="/images/icono-maletin.png" title="icon8" alt="" />
                         <h2>Llamados laborales</h2>
                     </div>
                 </div>
@@ -101,11 +125,11 @@
             </div>
             <div class="carrousel">
                 <div class="card-noticia">
-                    <img src="/basura-oceano-playa.jpg" title="img-noticia1" alt="" />
-                    <input type="button" title="ecologia" value="ECOLOGIA" />
+                    <img src="/images/basura-oceano-playa.jpg" title="img-noticia1" alt="" />
+                    <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
                     <div>
-                        <img src="/icono-calendario.png" title="" alt="" />
-                        <img src="/icono-reloj.png" title="" alt="" />
+                        <img src="/images/icono-calendario.png" title="" alt="" />
+                        <img src="/images/icono-reloj.png" title="" alt="" />
                         <h3><b>Microbios de la tierra y el océano están evolucionando para degradar
                                 el plástico</b></h3>
                         <p>Hace poco más de cinco años, científicos excavaban el suelo y el lodo en
@@ -122,16 +146,16 @@
                             por ciento más de eficiencia. Ese mismo equipo desarrolló una versión
                             aún más avanzada en 2020, que describieron como una superenzima , que
                             podría digerir los desechos plásticos a seis veces la velocidad.</p>
-                        <img src="/icono-flecha.png" title="" alt="" />
+                        <img src="/images/icono-flecha.png" title="" alt="" />
                         <p>ver más</p>
                     </div>
                 </div>
                 <div class="card-noticia">
-                    <img src="/obreros.jpg" title="img-noticia2" alt="" />
-                    <input type="button" title="economia" value="ECONOMIA" />
+                    <img src="/images/obreros.jpg" title="img-noticia2" alt="" />
+                    <button title="economia" value="ECONOMIA">ECONOMIA</button>
                     <div>
-                        <img src="/icono-calendario.png" title="" alt="" />
-                        <img src="/icono-reloj.png" title="" alt="" />
+                        <img src="/images/icono-calendario.png" title="" alt="" />
+                        <img src="/images/icono-reloj.png" title="" alt="" />
                         <h3><b>La tasa de desempleo en agosto se ubicó en 7,9%,
                                 unas 141.000 personas</b></h3>
                         <p>Este miércoles 21 de septiembre, el INE presentó su informe mensual
@@ -146,16 +170,16 @@
                             en mayo fue 8,1%, en abril y en marzo se ubicó en 7,7%, en febrero 7,3
                             y en enero 7,4%.
                         </p>
-                        <img src="/icono-flecha.png" title="" alt="" />
+                        <img src="/images/icono-flecha.png" title="" alt="" />
                         <p>ver más</p>
                     </div>
                 </div>
                 <div class="card-noticia">
-                    <img src="/bioferia.jpg" title="img-noticia3" alt="" />
-                    <input type="button" title="ecologia" value="ECOLOGIA" />
+                    <img src="/images/bioferia.jpg" title="img-noticia3" alt="" />
+                    <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
                     <div>
-                        <img src="/icono-calendario.png" title="" alt="" />
-                        <img src="/icono-reloj.png" title="" alt="" />
+                        <img src="/images/icono-calendario.png" title="" alt="" />
+                        <img src="/images/icono-reloj.png" title="" alt="" />
                         <h3><b>Segunda edición de Bioferia los días 14, 15 y 16
                                 de octubre en Parque Grauert</b></h3>
                         <p>El evento busca expandir su propósito de contribuir con
@@ -170,16 +194,16 @@
                             diseño, moda, cocina, cultivo, nuevas arquitecturas, movilidad, energías
                             renovables, turismo, diseño circular, reciclaje y compost, entre otras.
                         </p>
-                        <img src="/icono-flecha.png" title="" alt="" />
+                        <img src="/images/icono-flecha.png" title="" alt="" />
                         <p>ver más</p>
                     </div>
                 </div>
                 <div class="card-noticia">
-                    <img src="/niños-pobreza.jpg" title="img-noticia4" alt="" />
-                    <input type="button" title="sociedad" value="SOCIEDAD" />
+                    <img src="/images/niños-pobreza.jpg" title="img-noticia4" alt="" />
+                    <button title="sociedad" value="SOCIEDAD">SOCIEDAD</button>
                     <div>
-                        <img src="/icono-calendario.png" title="" alt="" />
-                        <img src="/icono-reloj.png" title="" alt="" />
+                        <img src="/images/icono-calendario.png" title="" alt="" />
+                        <img src="/images/icono-reloj.png" title="" alt="" />
                         <h3><b>La pobreza en el Uruguay aumentó en el primer semestre de 2022.
                                 La primera infancia fue la más afectada</b></h3>
                         <p>En el primer semestre de 2022, la pobreza en nuestro país fue del 10,7%, un
@@ -194,7 +218,7 @@
                             etaria más afectada por la pobreza: en el primer semestre de 2021, 16,1%
                             de los niños de 0 a 6 años sufrían este flagelo, mientras que en el mismo
                             tracto de 2022 se constató un drástico aumento hasta llegar a los 22,5%.</p>
-                        <img src="/icono-flecha.png" title="" alt="" />
+                        <img src="/images/icono-flecha.png" title="" alt="" />
                         <p>ver más</p>
                     </div>
                 </div>
@@ -224,7 +248,7 @@
             </div>
             <div>
                 <div>
-                    <img src="/laptop-escritorio.jpg" title="img-contacto" />
+                    <img src="/images/laptop-escritorio.jpg" title="img-contacto" />
                 </div>
             </div>
         </div>
@@ -232,7 +256,7 @@
 
     <footer>
         <div>
-            <img src="/logo-blanco.png" title="logo-footer" />
+            <img src="/images/logo-blanco.png" title="logo-footer" />
         </div>
         <div>
             <ul>
@@ -245,15 +269,59 @@
         <div>
             <p>Seguinos!</p>
             <div>
-                <img src="/icon-facebook.svg" title="icon-fb" />
-                <img src="/icon-twitter.svg" title="icon-tw" />
-                <img src="/icon-instagram.svg" title="icon-ig" />
+                <img src="/images/icon-facebook.svg" title="icon-fb" />
+                <img src="/images/icon-twitter.svg" title="icon-tw" />
+                <img src="/images/icon-instagram.svg" title="icon-ig" />
             </div>
         </div>
         <div>
             <p>Sitio desarrollado por Guzman Centurion y Joaquin Alonso</p>
         </div>
     </footer>
+
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+            <div class="content-modal">
+                <div class="content1">
+                    <div class="icon-atras">
+                        <img id="c1img1" src="images/icono-flecha.png" title="atras" alt="icon-atras" />
+                        <p>volver atrás</p>
+                    </div>
+                    <div class="icon-cerrar" onclick="toggleModal()">
+                        <img id="c1img2" src="images/icono-mas.png" title="cerrar" />
+                    </div>
+                </div>
+                <h2><b>REGISTRAR</b></h2>
+                <div class="content2">
+                    <div id="div-maletin">
+                        <img src="images/icono-maletin.png" title="maletin" alt="icon-maletin" />
+                    </div>
+                    <div class="div-texto">
+                        <h2>MI EMPRESA</h2>
+                        <p>Breve explicacion a lo que nos referimos</p>
+                    </div>
+                    <div class="div-flecha">
+                        <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                    </div>
+                </div>
+                <div class="content3">
+                    <div id="div-persona">
+                        <img src="images/icono-persona.png" title="persona" alt="icon-persona" />
+                    </div>
+                    <div class="div-texto">
+                        <h2>MI ORGANIZACIÓN</h2>
+                        <p>Estamos para ayudarlos a tener éxito</p>
+                    </div>
+                    <div class="div-flecha">
+                        <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                    </div>
+                </div>
+            </div>
+            <div class="img-modal">
+                <img src="images/imagen-modal.JPG" title="img-modal" alt="img-modal" />
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
