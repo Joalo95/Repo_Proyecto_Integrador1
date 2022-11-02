@@ -158,7 +158,6 @@ y luego una blanca  */
 /* Aplico estilo a la seccion de noticias */
 .seccion-noticias {
     width: 100vw;
-    /* height: 400px; */
     background-color: #1C78FD;
     display: flex;
     flex-direction: column;
@@ -170,12 +169,6 @@ y luego una blanca  */
     text-align: center;
     color: white;
 }
-
-/* .list {
-    width: 100vw;
-    height: 350px;
-    padding: 15px;
-} */
 
 .card {
     display: flex;
