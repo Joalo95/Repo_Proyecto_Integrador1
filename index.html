@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="template-style.css">
     <link rel="stylesheet" href="modal.css">
-    <!-- <link rel="stylesheet" href="carrousel.css"> -->
+    <link rel="stylesheet" href="carrousel.css">
     <link rel="stylesheet" href="navbar.css">
 
     <script>
@@ -26,8 +26,6 @@
             }
         };
     </script>
-
-    <!-- <script type="text/javascript" src="carrousel.js"></script> -->
 
     <title>Proyecto Nexos</title>
 
@@ -132,127 +130,159 @@
                 <h2>Noticias</h2>
                 <a href="">Ver todas</a>
             </div>
-            <div class="list">
-                <div class="card" id="hide">
-                    <div class="card-head">
-                        <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                        checked="checked">
+                    <div class="card slide-item">
+                        <div class="card-head head1">
+                            <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>Microbios de la tierra y el océano están evolucionando para degradar
+                                    el plástico</b></h3>
+                            <p>Hace poco más de cinco años, científicos excavaban el suelo y el lodo en
+                                los alrededores de un centro de reciclaje de plásticos en Japón y
+                                descubrieron una bacteria que se alimentaba del tipo de polímero llamado
+                                politereftalato de etileno (PET), utilizado en envases y botellas, por
+                                ejemplo, usándolo como fuente de energía para sobrevivir. Esta bacteria
+                                utiliza un par de enzimas que desarrolló intencionalmente para ello. En
+                                su momento fue un descubrimiento, aunque aislado, fantástico porque abría
+                                nuevos caminos para el reciclaje de las millones de toneladas de basura
+                                que lanzamos al medio ambiente todos los años. En 2018, un grupo de
+                                científicos en los EE. UU. Se basó en esta investigación para producir
+                                una enzima diseñada que podría consumir plásticos con alrededor de un 20
+                                por ciento más de eficiencia. Ese mismo equipo desarrolló una versión
+                                aún más avanzada en 2020, que describieron como una superenzima , que
+                                podría digerir los desechos plásticos a seis veces la velocidad.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
                     </div>
-                    <div class="card-icons">
-                        <img src="images/icono-calendario.png" title="" alt="" />
-                        <img src="images/icono-reloj.png" title="" alt="" />
+                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                    <div class="card slide-item">
+                        <div class="card-head head2">
+                            <button title="economia" value="ECONOMIA">ECONOMIA</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>La tasa de desempleo en agosto se ubicó en 7,9%,
+                                    unas 141.000 personas</b></h3>
+                            <p>Este miércoles 21 de septiembre, el INE presentó su informe mensual
+                                referido al mercado de trabajo. De acuerdo al estudio, en agosto de
+                                2022 para el total país la tasa de actividad se situó en 61,5%, la
+                                tasa de empleo en 56,6% y la tasa de desempleo en 7,9%. En Montevideo
+                                el desempleo fue de 7,6%, mientras que en el interior se ubicó en 8,2%.
+                                Los activos son 1.78530 personas, los ocupados 1.64360, y los desocupados
+                                141.000 personas. De acuerdo a los datos oficiales, a lo largo del año
+                                el desempleo fue el siguiente: En julio pasado la tasa de desempleo se
+                                ubicó en 8,1%, en junio 8,4% (el valor más alto en lo que va del año),
+                                en mayo fue 8,1%, en abril y en marzo se ubicó en 7,7%, en febrero 7,3
+                                y en enero 7,4%.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
                     </div>
-                    <div class="card-texto">
-                        <h3><b>Microbios de la tierra y el océano están evolucionando para degradar
-                                el plástico</b></h3>
-                        <p>Hace poco más de cinco años, científicos excavaban el suelo y el lodo en
-                            los alrededores de un centro de reciclaje de plásticos en Japón y
-                            descubrieron una bacteria que se alimentaba del tipo de polímero llamado
-                            politereftalato de etileno (PET), utilizado en envases y botellas, por
-                            ejemplo, usándolo como fuente de energía para sobrevivir. Esta bacteria
-                            utiliza un par de enzimas que desarrolló intencionalmente para ello. En
-                            su momento fue un descubrimiento, aunque aislado, fantástico porque abría
-                            nuevos caminos para el reciclaje de las millones de toneladas de basura
-                            que lanzamos al medio ambiente todos los años. En 2018, un grupo de
-                            científicos en los EE. UU. Se basó en esta investigación para producir
-                            una enzima diseñada que podría consumir plásticos con alrededor de un 20
-                            por ciento más de eficiencia. Ese mismo equipo desarrolló una versión
-                            aún más avanzada en 2020, que describieron como una superenzima , que
-                            podría digerir los desechos plásticos a seis veces la velocidad.
-                        </p>
+                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                    <div class="card slide-item">
+                        <div class="card-head head3">
+                            <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>Segunda edición de Bioferia los días 14, 15 y 16
+                                    de octubre en Parque Grauert</b></h3>
+                            <p>El evento busca expandir su propósito de contribuir con
+                                los Objetivos de Desarrollo Sostenible (ODS), conectando con la comunidad y
+                                acelerando la transición hacia una economía circular y sustentable, que
+                                deje atrás la lógica de descarte. Bioferia ha sido declarada de interés
+                                por el Ministerio de Ambiente, cuenta con el apoyo del Pacto Global, ONU
+                                Mujeres, Sistema B y Programa Sembrando, entre otras instituciones y media
+                                partners. Durante los tres días de Bioferia, el público podrá asistir a
+                                talleres, workshops y charlas, además de conocer de primera mano
+                                emprendimientos y tendencias que contribuyen a un impacto positivo en
+                                diseño, moda, cocina, cultivo, nuevas arquitecturas, movilidad, energías
+                                renovables, turismo, diseño circular, reciclaje y compost, entre otras.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
                     </div>
-                    <div class="card-foot">
-                        <img src="images/icono-flecha.png" title="" alt="" />
-                        <p>ver más</p>
+                    <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+                    <div class="card slide-item">
+                        <div class="card-head head4">
+                            <button title="sociedad" value="SOCIEDAD">SOCIEDAD</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>La pobreza en el Uruguay aumentó en el primer semestre de 2022.
+                                    La primera infancia fue la más afectada</b></h3>
+                            <p>En el primer semestre de 2022, la pobreza en nuestro país fue del 10,7%, un
+                                incremento de 0,5% respecto al mismo periodo de 2021, de acuerdo a datos
+                                publicados este jueves por el Instituto Nacional de Estadística (INE). El
+                                organismo explicó que la incidencia de pobreza en hogares fue del 7,4%, o
+                                sea que de cada 1.000 familias, 74 no logran cubrir lo más mínimo que
+                                tiene que ver con sus necesidades alimentarias o de vivienda. En ese plazo
+                                de tiempo, la indigencia se ubicó en el 0,4%, y en cuanto a hogares en el
+                                0,3%. El año pasado, el primer indicador estaba en 0,3% y el segundo en
+                                0,2%, o sea que ambos aumentaron. La primera infancia es la franja
+                                etaria más afectada por la pobreza: en el primer semestre de 2021, 16,1%
+                                de los niños de 0 a 6 años sufrían este flagelo, mientras que en el mismo
+                                tracto de 2022 se constató un drástico aumento hasta llegar a los 22,5%.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
                     </div>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-3" class="slide-control prev control-4">‹</label>
+                    <label for="slide-4" class="slide-control prev control-1">‹</label>
+
+                    <label for="slide-1" class="slide-control next control-4">›</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-4" class="slide-control next control-3">›</label>
+
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-4" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
                 </div>
-                <!--                 <div class="card" id="prev">
-                    <div>>
-                        <img src="images/obreros.jpg" title="img-noticia2" alt="" />
-                        <button title="economia" value="ECONOMIA">ECONOMIA</button>
-                    </div>
-                    <div>
-                        <img src="images/icono-calendario.png" title="" alt="" />
-                        <img src="images/icono-reloj.png" title="" alt="" />
-                        <h3><b>La tasa de desempleo en agosto se ubicó en 7,9%,
-                                unas 141.000 personas</b></h3>
-                        <p>Este miércoles 21 de septiembre, el INE presentó su informe mensual
-                            referido al mercado de trabajo. De acuerdo al estudio, en agosto de
-                            2022 para el total país la tasa de actividad se situó en 61,5%, la
-                            tasa de empleo en 56,6% y la tasa de desempleo en 7,9%. En Montevideo
-                            el desempleo fue de 7,6%, mientras que en el interior se ubicó en 8,2%.
-                            Los activos son 1.78530 personas, los ocupados 1.64360, y los desocupados
-                            141.000 personas. De acuerdo a los datos oficiales, a lo largo del año
-                            el desempleo fue el siguiente: En julio pasado la tasa de desempleo se
-                            ubicó en 8,1%, en junio 8,4% (el valor más alto en lo que va del año),
-                            en mayo fue 8,1%, en abril y en marzo se ubicó en 7,7%, en febrero 7,3
-                            y en enero 7,4%.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/icono-flecha.png" title="" alt="" />
-                        <p>ver más</p>
-                    </div>
-                </div>
-                <div class="card" id="act">
-                    <div>
-                        <img src="images/bioferia.jpg" title="img-noticia3" alt="" />
-                        <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
-                    </div>
-                    <div>
-                        <img src="images/icono-calendario.png" title="" alt="" />
-                        <img src="images/icono-reloj.png" title="" alt="" />
-                        <h3><b>Segunda edición de Bioferia los días 14, 15 y 16
-                                de octubre en Parque Grauert</b></h3>
-                        <p>El evento busca expandir su propósito de contribuir con
-                            los Objetivos de Desarrollo Sostenible (ODS), conectando con la comunidad y
-                            acelerando la transición hacia una economía circular y sustentable, que
-                            deje atrás la lógica de descarte. Bioferia ha sido declarada de interés
-                            por el Ministerio de Ambiente, cuenta con el apoyo del Pacto Global, ONU
-                            Mujeres, Sistema B y Programa Sembrando, entre otras instituciones y media
-                            partners. Durante los tres días de Bioferia, el público podrá asistir a
-                            talleres, workshops y charlas, además de conocer de primera mano
-                            emprendimientos y tendencias que contribuyen a un impacto positivo en
-                            diseño, moda, cocina, cultivo, nuevas arquitecturas, movilidad, energías
-                            renovables, turismo, diseño circular, reciclaje y compost, entre otras.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/icono-flecha.png" title="" alt="" />
-                        <p>ver más</p>
-                    </div>
-                </div>
-                <div class="card" id="next">
-                    <div>
-                        <img src="images/niños-pobreza.jpg" title="img-noticia4" alt="" />
-                        <button title="sociedad" value="SOCIEDAD">SOCIEDAD</button>
-                    </div>
-                    <div>
-                        <img src="images/icono-calendario.png" title="" alt="" />
-                        <img src="images/icono-reloj.png" title="" alt="" />
-                        <h3><b>La pobreza en el Uruguay aumentó en el primer semestre de 2022.
-                                La primera infancia fue la más afectada</b></h3>
-                        <p>En el primer semestre de 2022, la pobreza en nuestro país fue del 10,7%, un
-                            incremento de 0,5% respecto al mismo periodo de 2021, de acuerdo a datos
-                            publicados este jueves por el Instituto Nacional de Estadística (INE). El
-                            organismo explicó que la incidencia de pobreza en hogares fue del 7,4%, o
-                            sea que de cada 1.000 familias, 74 no logran cubrir lo más mínimo que
-                            tiene que ver con sus necesidades alimentarias o de vivienda. En ese plazo
-                            de tiempo, la indigencia se ubicó en el 0,4%, y en cuanto a hogares en el
-                            0,3%. El año pasado, el primer indicador estaba en 0,3% y el segundo en
-                            0,2%, o sea que ambos aumentaron. La primera infancia es la franja
-                            etaria más afectada por la pobreza: en el primer semestre de 2021, 16,1%
-                            de los niños de 0 a 6 años sufrían este flagelo, mientras que en el mismo
-                            tracto de 2022 se constató un drástico aumento hasta llegar a los 22,5%.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="images/icono-flecha.png" title="" alt="" />
-                        <p>ver más</p>
-                    </div> -->
             </div>
-            <!-- <div class="next new-next"></div> -->
-        </div>
-        <!-- <div class="swipe"></div> -->
         </div>
         <div class="seccion-contacto">
             <div class="contacto-div">
@@ -311,11 +341,11 @@
             <div class="content-modal">
                 <div class="content1">
                     <div class="icon-atras">
-                        <img id="c1img1" src="images/icono-flecha.png" title="atras" alt="icon-atras" />
+                        <img src="images/icono-flecha.png" title="atras" alt="icon-atras" />
                         <p>volver atrás</p>
                     </div>
                     <div class="icon-cerrar" onclick="toggleModal()">
-                        <img id="c1img2" src="images/icono-mas.png" title="cerrar" />
+                        <img src="images/icono-mas.png" title="cerrar" />
                     </div>
                 </div>
                 <h2><b>REGISTRAR</b></h2>
@@ -323,24 +353,28 @@
                     <div id="div-maletin">
                         <img src="images/icono-maletin.png" title="maletin" alt="icon-maletin" />
                     </div>
-                    <div class="div-texto">
-                        <h2>MI EMPRESA</h2>
-                        <p>Breve explicacion a lo que nos referimos</p>
-                    </div>
-                    <div class="div-flecha">
-                        <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                    <div class="content-vertical">
+                        <div class="div-texto">
+                            <h2 id="maletin-h2">MI EMPRESA</h2>
+                            <p>Breve explicacion a lo que nos referimos</p>
+                        </div>
+                        <div class="div-flecha">
+                            <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                        </div>
                     </div>
                 </div>
                 <div class="content3">
                     <div id="div-persona">
                         <img src="images/icono-persona.png" title="persona" alt="icon-persona" />
                     </div>
-                    <div class="div-texto">
-                        <h2>MI ORGANIZACIÓN</h2>
-                        <p>Estamos para ayudarlos a tener éxito</p>
-                    </div>
-                    <div class="div-flecha">
-                        <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                    <div class="content-vertical">
+                        <div class="div-texto">
+                            <h2 id="persona-h2">MI ORGANIZACIÓN</h2>
+                            <p>Estamos para ayudarlos a tener éxito</p>
+                        </div>
+                        <div class="div-flecha">
+                            <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                        </div>
                     </div>
                 </div>
             </div>
