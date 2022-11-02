@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https: //fonts.googleapis.com/css?family=DM Sans" rel="stylesheet" type="text/css" />
+    <link href="https: //fonts.googleapis.com/css?family=DMSans" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="template-style.css">
     <link rel="stylesheet" href="modal.css">
+    <!-- <link rel="stylesheet" href="carrousel.css"> -->
+    <link rel="stylesheet" href="navbar.css">
 
     <script>
         const toggleModal = () => {
@@ -26,21 +27,18 @@
         };
     </script>
 
-    <title>Proyecto Nexos</title>
-<<<<<<< HEAD
+    <!-- <script type="text/javascript" src="carrousel.js"></script> -->
 
-=======
-    <link rel="stylesheet" type="text/css" href="nexus.css">
->>>>>>> 428ced382190d8e7b5e00edaae8703f3f72bbc5f
+    <title>Proyecto Nexos</title>
+
 </head>
 
 <body>
-<<<<<<< HEAD
 
     <nav>
         <div class="nav-bar">
             <div class="container nav-container">
-                <div><img src="/images/logo.png" alt=""></div>
+                <div class="logo"><img src="images/logo.png" alt=""></div>
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -57,11 +55,8 @@
         </div>
     </nav>
 
-    <header>
-        <div class="header">
-            <img src="/images/manos.jpg" title="img-header" alt="">
-        </div>
-        <div>
+    <header class="header">
+        <div class="header-texto">
             <h1>Actúa para cambiar el mundo!</h1>
             <p>Fomentamos el vínculo entre empresas y organizaciones civiles para generar
                 un impacto positivo en las sociedad.<br />
@@ -72,69 +67,81 @@
 
     <main>
         <div class="seccion-nosotros">
-            <div>
-                <img src="/images/oficina.png" title="img-nostros1" alt="" />
-                <h2> Soluciones para empresas </h2>
-                <p>Generamos un medio para que las empresas se involucren en actividades
-                    de responsabilidad social.<br />
-                    Creá un grupo de voluntarios en tu oraganización y se parte del cambio!
-                </p>
+            <div class="nosotros">
+                <div class="nosotros-texto">
+                    <h2> Soluciones para empresas </h2>
+                    <p>Generamos un medio para que las empresas se involucren en actividades
+                        de responsabilidad social.<br />
+                        Creá un grupo de voluntarios en tu oraganización y se parte del cambio!
+                    </p>
+                </div>
+                <div class="nosotros-img">
+                    <img src="images/oficina.png" title="img-nostros1" alt="" />
+                </div>
+            </div>
+
+            <div class="nosotros">
+                <div class="nosotros-texto">
+                    <h2>Soluciones para organizaciones</h2>
+                    <p>Apoyamos a las organizaciones sociales para que alcancen sus objetivos.
+                        Ponemos a su disposición una comunidad de voluntarios dispuestos a apoyarlas
+                        en sus necesidades.<br />
+                        Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.
+                    </p>
+                </div>
+                <div class="nosotros-img">
+                    <img src="images/voluntariado.jpg" title="img-nosotros2" alt="" />
+                </div>
 
             </div>
 
-            <div>
-                <h2>Soluciones para organizaciones</h2>
-                <p>Apoyamos a las organizaciones sociales para que alcancen sus objetivos.
-                    Ponemos a su disposición una comunidad de voluntarios dispuestos a apoyarlas
-                    en sus necesidades.<br />
-                    Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.
-                </p>
-                <img src="/images/voluntariado.jpg" title="img-nosotros2" alt="" />
-
-            </div>
-
-            <div>
-                <h2>Encuentra las mejores oportunidades</h2>
-                <p>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos
-                    y mediambientales), donde encontraras el que mejor se adapte a la experiencia que
-                    estas buscando.<br />
-                    Te ayudamos en la coordinación con la organización de forma simple y rápida.</p>
-                <div class="container">
-                    <div id="box1">
-                        <img src="/images/icono-mas.png" title="icon1" alt="" />
-                        <img src="/images/icono-mano.png" title="icon2" alt="" />
+            <div class="oportunidades">
+                <div class="oportunidades-texto">
+                    <h2>Encuentra las mejores oportunidades</h2>
+                    <p>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos
+                        y mediambientales), donde encontraras el que mejor se adapte a la experiencia que
+                        estas buscando.<br />
+                        Te ayudamos en la coordinación con la organización de forma simple y rápida.</p>
+                </div>
+                <div class="container-box">
+                    <div class="box" id="box1">
+                        <img src="images/icono-mas.png" title="icon1" alt="" />
+                        <img src="images/icono-mano.png" title="icon2" alt="" />
                         <h2>Ser Voluntario</h2>
                     </div>
-                    <div id="box2">
-                        <img src="/images/icono-mas.png" title="icon3" alt="" />
-                        <img src="/images/icono-mano-corazon.png" title="icon4" alt="" />
+                    <div class="box" id="box2">
+                        <img src="images/icono-mas.png" title="icon3" alt="" />
+                        <img src="images/icono-mano-corazon.png" title="icon4" alt="" />
                         <h2>Donar</h2>
                     </div>
-                    <div id="box3">
-                        <img src="/images/icono-mas.png" title="icon5" alt="" />
-                        <img src="/images/icono-reciclar.png" title="icon6" alt="" />
+                    <div class="box" id="box3">
+                        <img src="images/icono-mas.png" title="icon5" alt="" />
+                        <img src="images/icono-reciclar.png" title="icon6" alt="" />
                         <h2>Reciclar</h2>
                     </div>
-                    <div id="box4">
-                        <img src="/images/icono-mas.png" title="icon7" alt="" />
-                        <img src="/images/icono-maletin.png" title="icon8" alt="" />
+                    <div class="box" id="box4">
+                        <img src="images/icono-mas.png" title="icon7" alt="" />
+                        <img src="images/icono-maletin.png" title="icon8" alt="" />
                         <h2>Llamados laborales</h2>
                     </div>
                 </div>
             </div>
         </div>
         <div class="seccion-noticias">
-            <div>
+            <div class="noticias-titulo">
                 <h2>Noticias</h2>
                 <a href="">Ver todas</a>
             </div>
-            <div class="carrousel">
-                <div class="card-noticia">
-                    <img src="/images/basura-oceano-playa.jpg" title="img-noticia1" alt="" />
-                    <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
-                    <div>
-                        <img src="/images/icono-calendario.png" title="" alt="" />
-                        <img src="/images/icono-reloj.png" title="" alt="" />
+            <div class="list">
+                <div class="card" id="hide">
+                    <div class="card-head">
+                        <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+                    </div>
+                    <div class="card-icons">
+                        <img src="images/icono-calendario.png" title="" alt="" />
+                        <img src="images/icono-reloj.png" title="" alt="" />
+                    </div>
+                    <div class="card-texto">
                         <h3><b>Microbios de la tierra y el océano están evolucionando para degradar
                                 el plástico</b></h3>
                         <p>Hace poco más de cinco años, científicos excavaban el suelo y el lodo en
@@ -150,17 +157,22 @@
                             una enzima diseñada que podría consumir plásticos con alrededor de un 20
                             por ciento más de eficiencia. Ese mismo equipo desarrolló una versión
                             aún más avanzada en 2020, que describieron como una superenzima , que
-                            podría digerir los desechos plásticos a seis veces la velocidad.</p>
-                        <img src="/images/icono-flecha.png" title="" alt="" />
+                            podría digerir los desechos plásticos a seis veces la velocidad.
+                        </p>
+                    </div>
+                    <div class="card-foot">
+                        <img src="images/icono-flecha.png" title="" alt="" />
                         <p>ver más</p>
                     </div>
                 </div>
-                <div class="card-noticia">
-                    <img src="/images/obreros.jpg" title="img-noticia2" alt="" />
-                    <button title="economia" value="ECONOMIA">ECONOMIA</button>
+                <!--                 <div class="card" id="prev">
+                    <div>>
+                        <img src="images/obreros.jpg" title="img-noticia2" alt="" />
+                        <button title="economia" value="ECONOMIA">ECONOMIA</button>
+                    </div>
                     <div>
-                        <img src="/images/icono-calendario.png" title="" alt="" />
-                        <img src="/images/icono-reloj.png" title="" alt="" />
+                        <img src="images/icono-calendario.png" title="" alt="" />
+                        <img src="images/icono-reloj.png" title="" alt="" />
                         <h3><b>La tasa de desempleo en agosto se ubicó en 7,9%,
                                 unas 141.000 personas</b></h3>
                         <p>Este miércoles 21 de septiembre, el INE presentó su informe mensual
@@ -175,16 +187,20 @@
                             en mayo fue 8,1%, en abril y en marzo se ubicó en 7,7%, en febrero 7,3
                             y en enero 7,4%.
                         </p>
-                        <img src="/images/icono-flecha.png" title="" alt="" />
+                    </div>
+                    <div>
+                        <img src="images/icono-flecha.png" title="" alt="" />
                         <p>ver más</p>
                     </div>
                 </div>
-                <div class="card-noticia">
-                    <img src="/images/bioferia.jpg" title="img-noticia3" alt="" />
-                    <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+                <div class="card" id="act">
                     <div>
-                        <img src="/images/icono-calendario.png" title="" alt="" />
-                        <img src="/images/icono-reloj.png" title="" alt="" />
+                        <img src="images/bioferia.jpg" title="img-noticia3" alt="" />
+                        <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+                    </div>
+                    <div>
+                        <img src="images/icono-calendario.png" title="" alt="" />
+                        <img src="images/icono-reloj.png" title="" alt="" />
                         <h3><b>Segunda edición de Bioferia los días 14, 15 y 16
                                 de octubre en Parque Grauert</b></h3>
                         <p>El evento busca expandir su propósito de contribuir con
@@ -199,16 +215,20 @@
                             diseño, moda, cocina, cultivo, nuevas arquitecturas, movilidad, energías
                             renovables, turismo, diseño circular, reciclaje y compost, entre otras.
                         </p>
-                        <img src="/images/icono-flecha.png" title="" alt="" />
+                    </div>
+                    <div>
+                        <img src="images/icono-flecha.png" title="" alt="" />
                         <p>ver más</p>
                     </div>
                 </div>
-                <div class="card-noticia">
-                    <img src="/images/niños-pobreza.jpg" title="img-noticia4" alt="" />
-                    <button title="sociedad" value="SOCIEDAD">SOCIEDAD</button>
+                <div class="card" id="next">
                     <div>
-                        <img src="/images/icono-calendario.png" title="" alt="" />
-                        <img src="/images/icono-reloj.png" title="" alt="" />
+                        <img src="images/niños-pobreza.jpg" title="img-noticia4" alt="" />
+                        <button title="sociedad" value="SOCIEDAD">SOCIEDAD</button>
+                    </div>
+                    <div>
+                        <img src="images/icono-calendario.png" title="" alt="" />
+                        <img src="images/icono-reloj.png" title="" alt="" />
                         <h3><b>La pobreza en el Uruguay aumentó en el primer semestre de 2022.
                                 La primera infancia fue la más afectada</b></h3>
                         <p>En el primer semestre de 2022, la pobreza en nuestro país fue del 10,7%, un
@@ -222,92 +242,50 @@
                             0,2%, o sea que ambos aumentaron. La primera infancia es la franja
                             etaria más afectada por la pobreza: en el primer semestre de 2021, 16,1%
                             de los niños de 0 a 6 años sufrían este flagelo, mientras que en el mismo
-                            tracto de 2022 se constató un drástico aumento hasta llegar a los 22,5%.</p>
-                        <img src="/images/icono-flecha.png" title="" alt="" />
-                        <p>ver más</p>
+                            tracto de 2022 se constató un drástico aumento hasta llegar a los 22,5%.
+                        </p>
                     </div>
-                </div>
+                    <div>
+                        <img src="images/icono-flecha.png" title="" alt="" />
+                        <p>ver más</p>
+                    </div> -->
             </div>
+            <!-- <div class="next new-next"></div> -->
+        </div>
+        <!-- <div class="swipe"></div> -->
         </div>
         <div class="seccion-contacto">
-            <div>
+            <div class="contacto-div">
                 <h2>Contacto</h2>
-                <form>
+                <form class="formulario">
                     <div>
                         <p class="form-nombre">Ingrese su nombre:</p>
                         <input name="name" class="required" placeholder="Nombre" title="Your name" type="text" />
-                    </div>
-                    <div>
+
                         <p class="form-email">Ingrese su correo:</p>
                         <input name="mail" class="required" placeholder="correo@correo.com" title="Your mail"
                             type="text" />
-                    </div>
-                    <div>
+
                         <p class="form-mensaje">Ingrese su comentario:</p>
                         <textarea name="message" class="required" placeholder="Su mensaje..." rows="3"></textarea>
-                    </div>
-                    <div>
+
                         <button class="btn-enviar" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>
-            <div>
+            <div class="contacto-img">
                 <div>
-                    <img src="/images/laptop-escritorio.jpg" title="img-contacto" />
+                    <img src="images/laptop-escritorio.jpg" title="img-contacto" />
                 </div>
             </div>
-=======
-    <header class="header">
-        <div class="nav">
-            <ul>
-                <img class="logo1" src="Materiales/logo.png">
-            
-                <li><a class="boton" href="0" target="_blank">Nosotros</a></li>
-            
-                <li><a class="boton" href="0" target="_blank">Noticias</a></li>
-            
-                <li><a class="boton" href="0" target="_blank">Ayuda</a></li>
-            
-                <li><a class="item-r" href="0">INGRESAR</a></li>
-            </ul>
         </div>
-    </header>
-    
-    
-    <section>
-        <div class="section">
-            <h1 class="tituloY">Actua para cambiar el mundo<h1>
-            <p class="textoY">Lorep impsu</p>
-        </div>
-    </section>
-
-    <main class="container">
-        <div  class="nosotros">
-            <img class="oficina" src="Materiales/oficina.png"  alt="">
-        </div>
-        <div class="textMain"
-            <h2 class="tituloN"> Soluciones para empresas</h2>
-            <p class="textoN">Lorem impsu</p>
-        </div>
-
-
-        <div class="nosotros2">
-            <img class="voluntariado" src="Materiales/voluntariado.jpg">
->>>>>>> 428ced382190d8e7b5e00edaae8703f3f72bbc5f
-        </div>
-        <div class="textMain2">
-            <h2 class="tituloS">Soluciones para organizaciones</h2>
-            <p class="textoS">Lorem impsu</p>
-        </div>
-
     </main>
-<<<<<<< HEAD
 
     <footer>
-        <div>
-            <img src="/images/logo-blanco.png" title="logo-footer" />
+        <div class="footer-logo">
+            <img src="images/logo-blanco.png" title="logo-footer" />
         </div>
-        <div>
+        <div class="footer-nav">
             <ul>
                 <li>Nosotros</li>
                 <li>Noticias</li>
@@ -315,15 +293,15 @@
                 <li>Terminos y condiciones</li>
             </ul>
         </div>
-        <div>
+        <div class="footer-social">
             <p>Seguinos!</p>
             <div>
-                <img src="/images/icon-facebook.svg" title="icon-fb" />
-                <img src="/images/icon-twitter.svg" title="icon-tw" />
-                <img src="/images/icon-instagram.svg" title="icon-ig" />
+                <img src="images/icon-facebook.svg" title="icon-fb" />
+                <img src="images/icon-twitter.svg" title="icon-tw" />
+                <img src="images/icon-instagram.svg" title="icon-ig" />
             </div>
         </div>
-        <div>
+        <div class="footer-final">
             <p>Sitio desarrollado por Guzman Centurion y Joaquin Alonso</p>
         </div>
     </footer>
@@ -371,50 +349,6 @@
             </div>
         </div>
     </div>
-=======
-    <article class="article">
-        <div> 
-            <h1 class="titulo">Oportunidades</h1>
-            <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, voluptatem qui possimus porro quisquam officia quis, praesentium adipisci earum vero reiciendis facere fugit accusamus labore odio dignissimos deleniti alias! Voluptate.</p> 
-            <ul>
-
-                <li class="voluntario" src="Materiales/icono-mano-corazon.png">Ser voluntario</li>
-                <li class="donar">Donar</li>
-                <li class="reciclar">Reciclar</li>
-                <li class="laborales">Llamados Laborales</li>
-            </ul>
-        </div>
-    </article>
-
-    <article class="contacto">
-        <div>
-            <img class="laptop" src="Materiales/laptop-escritorio.jpg">
-        </div>
-        <div>
-            <h1>Contacto</h1> 
-        </div>
-    </article>
-
-
-    
-    <footer class="footer">
-        <div>
-            <img class="nexos" src="Materiales/logo.png">
-            <ul class = "nex">
-                <li>Nosotros</li>
-                <li>Noticias</li>
-                <li>Contacto</li>
-                <li>Terminos y condiciones</li>
-            </ul>
-
-        </div>
-    </footer>
-
-    
-    
-    
-    
->>>>>>> 428ced382190d8e7b5e00edaae8703f3f72bbc5f
 </body>
 
 </html>

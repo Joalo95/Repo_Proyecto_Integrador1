@@ -8,7 +8,7 @@ body {
     margin: 0;
     display: grid;
     place-items: center;
-    font-family: 'DM Sans';
+    font-family: 'DMSans';
     background: transparent;
 }
 
@@ -22,15 +22,9 @@ button {
 }
 
 .icon-cerrar {
-    /* position: fixed;
-    top: 100px;
-    right: 50px; */
     width: 31px;
     height: 30px;
-    display: grid;
-    place-items: center;
     opacity: 0;
-
     background: none;
 }
 
@@ -73,7 +67,8 @@ body.open>.btn-ingresar {
     position: fixed;
     top: 50%;
     left: 50%;
-    background: #37353b;
+    /* box-shadow: inset 0 0 2000px rgba(49, 47, 47, 0.868); */
+    background-color: rgba(22, 20, 20, 0.792);
     color: #f9f9f9;
     padding: 18px 10px;
     margin: 12px 10px;
@@ -102,7 +97,6 @@ body.open>.btn-ingresar {
     height: 50px;
     top: 20px;
     background-color: none;
-
 }
 
 .icon-atras>img {
@@ -123,8 +117,10 @@ body.open>.btn-ingresar {
     align-items: center;
     width: 90%;
     height: 150px;
+    border: 1px;
+    border-style: solid;
+    border-color: #f9f9f9;
     border-radius: 10px;
-    background-color: chocolate;
 }
 
 #div-maletin {
@@ -147,14 +143,12 @@ body.open>.btn-ingresar {
 
 .content2>.div-flecha {
     display: flex;
-    order: 1;
-    background-color: brown;
+    justify-content: flex-end;
 }
 
 .content3>.div-flecha {
     display: flex;
-    order: 1;
-    background-color: brown;
+    justify-content: flex-end;
 }
 
 #div-maletin>img {
@@ -171,7 +165,9 @@ body.open>.btn-ingresar {
     width: 90%;
     height: 150px;
     border-radius: 10px;
-    background-color: darkcyan;
+    border: 1px;
+    border-style: solid;
+    border-color: #f9f9f9;
 }
 
 #div-persona {
