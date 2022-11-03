@@ -1,75 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https: //fonts.googleapis.com/css?family=DMSans" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" media="(max-width: 390px)" href="template-style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" media="(min-width: 1280px)" href="responsive.css" />
+
+    <script>
+        const toggleModal = () => {
+            const bodyClassList = document.body.classList;
+
+            if (bodyClassList.contains("open")) {
+                bodyClassList.remove("open");
+                bodyClassList.add("closed");
+            } else {
+                bodyClassList.remove("closed");
+                bodyClassList.add("open");
+            }
+        };
+    </script>
+
     <title>Proyecto Nexos</title>
-    <a link="stylesheet" href="nexus.css"> 
+
 </head>
+
 <body>
 
     <nav>
-        <div class="navegacion">
-            <img src="img.logo" alt="">
-            <ul>
-                <li><a href="0">Nosotros</a></li>
-                <li><a href="0">Noticias</a></li>
-                <li><a href="0">Ayuda</a></li>
-                <li><a href="0">Ingresar</a></li>
-            </ul>
+        <div class="nav-bar">
+            <div class="container nav-container">
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <input class="checkbox" type="checkbox" title="check" />
+                <div class="menu-items">
+                    <li><a href="#seccion-nosotros">Nosotros</a></li>
+                    <li><a href="#seccion-noticias">Noticias</a></li>
+                    <li><a href="#seccion-contacto">Ayuda</a></li>
+                    <li><button onclick="toggleModal()" title="ingresar" value="INGRESAR">INGRESAR</button></li>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <header>
-        <div class="header">
-            <img src="img.back" alt="">
-            <h1>Actua para cambiar el mundo<h1>
-            <h3>Lorem impsu</h3>
+    <header class="header">
+        <div class="header-texto">
+            <h1>Actúa para cambiar el mundo!</h1>
+            <p>Fomentamos el vínculo entre empresas y organizaciones civiles para generar
+                un impacto positivo en las sociedad.<br />
+                Descubrí diferentes maneras de involucrar tu organización con la sociedad.
+            </p>
         </div>
     </header>
 
-    <main class="nosotros">
-        <div> <h2> Soluciones para empresas </h2>
-            <h3>Lorem impsu</h3>
-            <img src="img.nos1"  alt="">
-        </div>
-        
-        <div>
-            <h2>Soluciones para organizaciones</h2>
-            <h3>Lorem impsu</h3>
-            <img src="img.nos1"  alt="">
+    <main>
+        <div class="seccion-nosotros">
+            <div class="nosotros nosotros1">
+                <div class="nosotros-texto" id="texto1">
+                    <h2> Soluciones para empresas </h2>
+                    <p>Generamos un medio para que las empresas se involucren en actividades
+                        de responsabilidad social.<br />
+                        Creá un grupo de voluntarios en tu oraganización y se parte del cambio!
+                    </p>
+                </div>
+                <div class="nosotros-img" id="img1">
+                    <img src="images/oficina.png" title="img-nostros1" alt="" />
+                </div>
+            </div>
 
-        </div>
+            <div class="nosotros nosotros2">
+                <div class="nosotros-texto" id="texto2">
+                    <h2>Soluciones para organizaciones</h2>
+                    <p>Apoyamos a las organizaciones sociales para que alcancen sus objetivos.
+                        Ponemos a su disposición una comunidad de voluntarios dispuestos a apoyarlas
+                        en sus necesidades.<br />
+                        Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.
+                    </p>
+                </div>
+                <div class="nosotros-img" id="img2">
+                    <img src="images/voluntariado.jpg" title="img-nosotros2" alt="" />
+                </div>
 
-        <div>
-            <h1>Encuentra las mejores oportunidades</h1>
-            <h3>Lorem impsu</h3>
-            <ul>
-                <li>Ser Voluntario</li>
-                <li>Donar</li>
-                <li>Reciclar</li>
-                <li>Llamados laborales</li>
-            </ul>
+            </div>
+
+            <div class="oportunidades">
+                <div class="oportunidades-texto">
+                    <h2>Encuentra las mejores oportunidades</h2>
+                    <p>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos
+                        y mediambientales), donde encontraras el que mejor se adapte a la experiencia que
+                        estas buscando.<br />
+                        Te ayudamos en la coordinación con la organización de forma simple y rápida.</p>
+                </div>
+                <div class="container-box">
+                    <div class="box" id="box1">
+                        <img src="images/icono-mas.png" title="icon1" alt="" />
+                        <img src="images/icono-mano.png" title="icon2" alt="" />
+                        <h3>Ser Voluntario</h3>
+                    </div>
+                    <div class="box" id="box2">
+                        <img src="images/icono-mas.png" title="icon3" alt="" />
+                        <img src="images/icono-mano-corazon.png" title="icon4" alt="" />
+                        <h3>Donar</h3>
+                    </div>
+                    <div class="box" id="box3">
+                        <img src="images/icono-mas.png" title="icon5" alt="" />
+                        <img src="images/icono-reciclar.png" title="icon6" alt="" />
+                        <h3>Reciclar</h3>
+                    </div>
+                    <div class="box" id="box4">
+                        <img src="images/icono-mas.png" title="icon7" alt="" />
+                        <img src="images/icono-maletin.png" title="icon8" alt="" />
+                        <h3>Llamados laborales</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seccion-noticias">
+            <div class="noticias-titulo">
+                <h2>Noticias</h2>
+                <a href="">Ver todas</a>
+            </div>
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                        checked="checked">
+                    <div class="card slide-item">
+                        <div class="card-head head1">
+                            <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>Microbios de la tierra y el océano están evolucionando para degradar
+                                    el plástico</b></h3>
+                            <p>Hace poco más de cinco años, científicos excavaban el suelo y el lodo en
+                                los alrededores de un centro de reciclaje de plásticos en Japón y
+                                descubrieron una bacteria que se alimentaba del tipo de polímero llamado
+                                politereftalato de etileno (PET), utilizado en envases y botellas, por
+                                ejemplo, usándolo como fuente de energía para sobrevivir. Esta bacteria
+                                utiliza un par de enzimas que desarrolló intencionalmente para ello. En
+                                su momento fue un descubrimiento, aunque aislado, fantástico porque abría
+                                nuevos caminos para el reciclaje de las millones de toneladas de basura
+                                que lanzamos al medio ambiente todos los años. En 2018, un grupo de
+                                científicos en los EE. UU. Se basó en esta investigación para producir
+                                una enzima diseñada que podría consumir plásticos con alrededor de un 20
+                                por ciento más de eficiencia. Ese mismo equipo desarrolló una versión
+                                aún más avanzada en 2020, que describieron como una superenzima , que
+                                podría digerir los desechos plásticos a seis veces la velocidad.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                    <div class="card slide-item">
+                        <div class="card-head head2">
+                            <button title="economia" value="ECONOMIA">ECONOMIA</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>La tasa de desempleo en agosto se ubicó en 7,9%,
+                                    unas 141.000 personas</b></h3>
+                            <p>Este miércoles 21 de septiembre, el INE presentó su informe mensual
+                                referido al mercado de trabajo. De acuerdo al estudio, en agosto de
+                                2022 para el total país la tasa de actividad se situó en 61,5%, la
+                                tasa de empleo en 56,6% y la tasa de desempleo en 7,9%. En Montevideo
+                                el desempleo fue de 7,6%, mientras que en el interior se ubicó en 8,2%.
+                                Los activos son 1.78530 personas, los ocupados 1.64360, y los desocupados
+                                141.000 personas. De acuerdo a los datos oficiales, a lo largo del año
+                                el desempleo fue el siguiente: En julio pasado la tasa de desempleo se
+                                ubicó en 8,1%, en junio 8,4% (el valor más alto en lo que va del año),
+                                en mayo fue 8,1%, en abril y en marzo se ubicó en 7,7%, en febrero 7,3
+                                y en enero 7,4%.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                    <div class="card slide-item">
+                        <div class="card-head head3">
+                            <button title="ecologia" value="ECOLOGIA">ECOLOGIA</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>Segunda edición de Bioferia los días 14, 15 y 16
+                                    de octubre en Parque Grauert</b></h3>
+                            <p>El evento busca expandir su propósito de contribuir con
+                                los Objetivos de Desarrollo Sostenible (ODS), conectando con la comunidad y
+                                acelerando la transición hacia una economía circular y sustentable, que
+                                deje atrás la lógica de descarte. Bioferia ha sido declarada de interés
+                                por el Ministerio de Ambiente, cuenta con el apoyo del Pacto Global, ONU
+                                Mujeres, Sistema B y Programa Sembrando, entre otras instituciones y media
+                                partners. Durante los tres días de Bioferia, el público podrá asistir a
+                                talleres, workshops y charlas, además de conocer de primera mano
+                                emprendimientos y tendencias que contribuyen a un impacto positivo en
+                                diseño, moda, cocina, cultivo, nuevas arquitecturas, movilidad, energías
+                                renovables, turismo, diseño circular, reciclaje y compost, entre otras.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+                    <div class="card slide-item">
+                        <div class="card-head head4">
+                            <button title="sociedad" value="SOCIEDAD">SOCIEDAD</button>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/icono-calendario.png" title="" alt="" />
+                            <img src="images/icono-reloj.png" title="" alt="" />
+                        </div>
+                        <div class="card-texto">
+                            <h3><b>La pobreza en el Uruguay aumentó en el primer semestre de 2022.
+                                    La primera infancia fue la más afectada</b></h3>
+                            <p>En el primer semestre de 2022, la pobreza en nuestro país fue del 10,7%, un
+                                incremento de 0,5% respecto al mismo periodo de 2021, de acuerdo a datos
+                                publicados este jueves por el Instituto Nacional de Estadística (INE). El
+                                organismo explicó que la incidencia de pobreza en hogares fue del 7,4%, o
+                                sea que de cada 1.000 familias, 74 no logran cubrir lo más mínimo que
+                                tiene que ver con sus necesidades alimentarias o de vivienda. En ese plazo
+                                de tiempo, la indigencia se ubicó en el 0,4%, y en cuanto a hogares en el
+                                0,3%. El año pasado, el primer indicador estaba en 0,3% y el segundo en
+                                0,2%, o sea que ambos aumentaron. La primera infancia es la franja
+                                etaria más afectada por la pobreza: en el primer semestre de 2021, 16,1%
+                                de los niños de 0 a 6 años sufrían este flagelo, mientras que en el mismo
+                                tracto de 2022 se constató un drástico aumento hasta llegar a los 22,5%.
+                            </p>
+                        </div>
+                        <div class="card-foot">
+                            <img src="images/icono-flecha.png" title="" alt="" />
+                            <p>ver más</p>
+                        </div>
+                    </div>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-3" class="slide-control prev control-4">‹</label>
+                    <label for="slide-4" class="slide-control prev control-1">‹</label>
+
+                    <label for="slide-1" class="slide-control next control-4">›</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-4" class="slide-control next control-3">›</label>
+
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-4" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="seccion-contacto">
+            <div class="contacto-div">
+                <h2>Contacto</h2>
+                <form class="formulario">
+                    <div>
+                        <p class="form-nombre">Ingrese su nombre:</p>
+                        <input name="name" class="required" placeholder="Nombre" title="Your name" type="text" />
+
+                        <p class="form-email">Ingrese su correo:</p>
+                        <input name="mail" class="required" placeholder="correo@correo.com" title="Your mail"
+                            type="text" />
+
+                        <p class="form-mensaje">Ingrese su comentario:</p>
+                        <textarea name="message" class="required" placeholder="Su mensaje..." rows="3"></textarea>
+
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contacto-img">
+                <div>
+                    <img src="images/laptop-escritorio.jpg" title="img-contacto" />
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer class="Noticias">
-        <div>
-            <h1>Contacto</h1>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo-blanco.png" title="logo-footer" />
+        </div>
+        <div class="footer-nav">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Nosotros</li>
+                <li>Noticias</li>
+                <li>Contacto</li>
+                <li>Terminos y condiciones</li>
             </ul>
         </div>
-
+        <div class="footer-social">
+            <p>Seguinos!</p>
+            <div>
+                <img src="images/icon-facebook.svg" title="icon-fb" />
+                <img src="images/icon-twitter.svg" title="icon-tw" />
+                <img src="images/icon-instagram.svg" title="icon-ig" />
+            </div>
+        </div>
+        <div class="footer-final">
+            <p>Sitio desarrollado por Guzman Centurion y Joaquin Alonso</p>
+        </div>
     </footer>
 
-
-    
-    
-    
-    
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+            <div class="content-modal">
+                <div class="content1">
+                    <div class="icon-atras">
+                        <img src="images/icono-flecha.png" title="atras" alt="icon-atras" />
+                        <p>volver atrás</p>
+                    </div>
+                    <div class="icon-cerrar" onclick="toggleModal()">
+                        <img src="images/icono-mas.png" title="cerrar" />
+                    </div>
+                </div>
+                <h2><b>REGISTRAR</b></h2>
+                <div class="content2">
+                    <div id="div-maletin">
+                        <img src="images/icono-maletin.png" title="maletin" alt="icon-maletin" />
+                    </div>
+                    <div class="content-vertical">
+                        <div class="div-texto">
+                            <h2 id="maletin-h2">MI EMPRESA</h2>
+                            <p>Breve explicacion a lo que nos referimos</p>
+                        </div>
+                        <div class="div-flecha">
+                            <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                        </div>
+                    </div>
+                </div>
+                <div class="content3">
+                    <div id="div-persona">
+                        <img src="images/icono-persona.png" title="persona" alt="icon-persona" />
+                    </div>
+                    <div class="content-vertical">
+                        <div class="div-texto">
+                            <h2 id="persona-h2">MI ORGANIZACIÓN</h2>
+                            <p>Estamos para ayudarlos a tener éxito</p>
+                        </div>
+                        <div class="div-flecha">
+                            <img src="images/icono-flecha.png" title="delante" alt="icon-delante" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-modal">
+                <img src="images/imagen-modal.JPG" title="img-modal" alt="img-modal" />
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

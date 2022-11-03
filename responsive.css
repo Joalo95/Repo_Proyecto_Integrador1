@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'DMSans';
+    width: 100vw;
+}
+
+/* Aplico estilo a la barra de navegacion */
+.nav-bar {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-lines {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox {
+    display: none;
+    visibility: hidden;
+}
+
+.logo {
+    display: flex;
+    width: auto;
+}
+
+.nav-container {
+    display: flex;
+    width: 90vw;
+    height: 70px;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items>li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 18px;
+}
+
+.nav-container button {
+    width: 150px;
+    height: 40px;
+    border: 0;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background: #5227CC;
+    color: #f9f9f9;
+    margin-left: 100%;
+}
+
+.nav-container a:hover {
+    font-weight: bolder;
+}
+
+/* Aplico estilo a las fuentes */
+h1 h2 h3 p {
+    font-family: 'DMSans';
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Aplico estilo al header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/manos.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 375px;
+    margin-left: -36px;
+}
+
+.header-texto {
+    padding: 50px 10px 0 10px;
+    color: white;
+    text-align: center;
+}
+
+.heder-texto>h1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heder-texto>p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Aplico estilo a la seccion nosotros que se divide en 2 partes. Primero una celeste
+y luego una blanca  */
+
+/* Primera parte */
+.seccion-nosotros {
+    display: grid;
+    width: 100vw;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    /* height: 30vh; */
+    background-color: #1C78FD;
+
+}
+
+.nosotros1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.nosotros2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nosotros-texto {
+    /*     display: flex;
+    flex-direction: column; */
+    width: 45vw;
+    padding: 5vw;
+    /* text-align: center; */
+    color: white;
+}
+
+.nosotros-img {
+    /*  display: flex;
+    flex-direction: column; */
+    width: 45vw;
+    padding: 5vw;
+}
+
+/* Segunda parte */
+.oportunidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /*  height: 30vh; */
+}
+
+.oportunidades-texto {
+    width: 90vw;
+    text-align: center;
+}
+
+.container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    /* height: 250px; */
+    margin: 6px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    color: antiquewhite;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 12px;
+}
+
+#box1 {
+    /*  grid-column: 1;
+    grid-row: 1; */
+    background-color: rgb(210, 58, 89);
+}
+
+#box2 {
+    /*  grid-column: 2;
+    grid-row: 1; */
+    background-color: rgb(240, 149, 38);
+}
+
+#box3 {
+    /*     grid-column: 1;
+    grid-row: 2; */
+    background-color: rgb(178, 244, 79);
+}
+
+#box4 {
+    /*    grid-column: 2;
+    grid-row: 2; */
+    background-color: rgb(174, 225, 245);
+}
+
+/* Aplico estilo a la seccion de noticias */
+.seccion-noticias {
+    width: 100vw;
+    /* height: 60vh; */
+    background-color: #1C78FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias-titulo {
+    text-align: center;
+    color: white;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    /* height: 40vh; */
+    border: 1px;
+    border-color: rgba(41, 39, 39, 0.73);
+    border-style: solid;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 8px;
+    background-color: rgba(255, 255, 255, 0.936);
+}
+
+.card-head {
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.head1 {
+    background-image: url("images/basura-oceano-playa.jpg");
+}
+
+.head2 {
+    background-image: url("images/obreros.jpg");
+}
+
+.head3 {
+    background-image: url("images/bioferia.jpg");
+}
+
+.head4 {
+    background-image: url("images/niños-pobreza.jpg");
+}
+
+.card-icons {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.card-texto {
+    width: 28vw;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.card-foot {
+    height: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+/* Aplico estilo a la seccion de contacto */
+
+.seccion-contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding: 15px;
+    margin: 15px;
+}
+
+.seccion-contacto>div>h2 {
+    text-align: center;
+}
+
+.contacto-div>form {
+    display: flex;
+    width: 50vw;
+    height: 250px;
+    padding: 15px;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario>div>input {
+    width: 50vw;
+    padding: 12px;
+}
+
+.formulario>div>button {
+    width: 50vw;
+    padding: 12px;
+}
+
+.formulario>div>textarea {
+    width: 50vw;
+    padding: 12px;
+}
+
+.contacto-img {
+    width: 50vw;
+    padding: 15px;
+    margin: 15px;
+}
+
+/* Aplico estilo al footer */
+footer {
+    display: flex;
+    text-align: center;
+    width: 100vw;
+    height: 200px;
+    background-color: blueviolet;
+    margin-left: -33px;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.footer-nav>ul>li {
+    list-style-type: none;
+}

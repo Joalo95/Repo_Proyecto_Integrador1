@@ -1,0 +1,426 @@
+/* Seteo propiedades */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+/* Aplico estilo a las fuentes */
+h1 h2 h3 p {
+    font-family: 'DMSans';
+}
+
+h1 {
+    font-size: larger;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: large;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: medium;
+    font-weight: 600;
+}
+
+p {
+    font-size: small;
+    font-weight: 400;
+}
+
+/* Defino estilos para la barra de navegacion  */
+.container {
+    margin: 10px;
+}
+
+.nav-bar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.467);
+    position: absolute;
+    left: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    position: relative;
+    height: 40px;
+}
+
+.nav-bar .menu-items {
+    display: flex;
+}
+
+.nav-bar .nav-container li {
+    list-style: none;
+}
+
+.nav-bar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.nav-bar .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    padding: 1px 2px;
+    height: 30px;
+    width: 40px;
+    top: 20px;
+    left: 10px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+/* .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+} */
+
+.nav-bar .menu-items {
+    /* box-shadow: inset 0 0 2000px rgb(255, 255, 255); */
+    background-color: rgba(255, 255, 255, 0.842);
+    transform: translate(250%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 40px 15px 40px 15px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.nav-bar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo>img {
+    position: absolute;
+    width: 30%;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+/* .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+/* .nav-container input[type="checkbox"]:checked~.logo {
+    visibility: hidden;
+} */
+
+/* Aplico estilo al header. Tiene imagencde fondo y texto centrado */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/manos.jpg");
+    background-size: cover;
+    width: 100vw;
+    margin-left: -36px;
+}
+
+.header-texto {
+    padding: 50px 10px 0 10px;
+    color: white;
+    text-align: center;
+}
+
+.heder-texto>h1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heder-texto>p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Aplico estilo a la seccion nosotros que se divide en 2 partes. Primero una celeste
+y luego una blanca  */
+
+/* Primera parte */
+.seccion-nosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C78FD;
+
+}
+
+.nosotros-texto {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-img {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+/* Segunda parte */
+.oportunidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oportunidades-texto {
+    width: 100vw;
+    height: 150px;
+    text-align: center;
+}
+
+.container-box {
+    display: grid;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    color: antiquewhite;
+    width: 45vw;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 12px;
+}
+
+#box1 {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(210, 58, 89);
+}
+
+#box2 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(240, 149, 38);
+}
+
+#box3 {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(178, 244, 79);
+}
+
+#box4 {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(174, 225, 245);
+}
+
+/* Aplico estilo a la seccion de noticias */
+.seccion-noticias {
+    width: 100vw;
+    background-color: #1C78FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias-titulo {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 94vw;
+    height: 300px;
+    border: 1px;
+    border-color: rgba(41, 39, 39, 0.73);
+    border-style: solid;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 8px;
+    background-color: rgba(255, 255, 255, 0.936);
+}
+
+.card-head {
+    background-size: cover;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.head1 {
+    background-image: url("images/basura-oceano-playa.jpg");
+}
+
+.head2 {
+    background-image: url("images/obreros.jpg");
+}
+
+.head3 {
+    background-image: url("images/bioferia.jpg");
+}
+
+.head4 {
+    background-image: url("images/niños-pobreza.jpg");
+}
+
+.card-icons {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.card-texto {
+    width: 90vw;
+    height: 100px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.card-foot {
+    height: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+/* Aplico estilo a la seccion de contacto */
+
+.seccion-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-left: -26px;
+}
+
+.seccion-contacto>div>h2 {
+    text-align: center;
+}
+
+.contacto-div>form {
+    display: flex;
+    width: 100vw;
+    height: 250px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario>div>input {
+    width: 90vw;
+    padding: 5px;
+}
+
+.formulario>div>button {
+    width: 90vw;
+    padding: 5px;
+}
+
+.formulario>div>textarea {
+    width: 90vw;
+    padding: 5px;
+}
+
+.contacto-img {
+    padding: 15px;
+}
+
+
+/* Aplico estilo al footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 200px;
+    background-color: blueviolet;
+    margin-left: -33px;
+}
+
+.footer-nav>ul>li {
+    list-style-type: none;
+}

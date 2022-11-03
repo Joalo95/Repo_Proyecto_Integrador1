@@ -1,0 +1,264 @@
+/* Aplico estilo al modal dando propiedades primero al contenedero principal */
+body {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    font-family: 'DMSans';
+    background: transparent;
+}
+
+button {
+    width: min-content;
+    border: 0;
+    border-radius: 50px;
+    padding: 8px 20px;
+    background: #5227CC;
+    color: #f9f9f9;
+}
+
+.icon-cerrar {
+    width: 31px;
+    height: 30px;
+    opacity: 0;
+    background: none;
+    display: flex;
+}
+
+.icon-cerrar>img {
+    rotate: 45deg;
+    color: #1a1a1a;
+}
+
+body.open .icon-cerrar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-ingresar,
+.modal,
+.icon-cerrar {
+    transition: 0.5s;
+}
+
+body.open>.btn-ingresar {
+    scale: 0.75;
+}
+
+@keyframes modal-in {
+    0% {
+        translate: -50%;
+        scale: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        visibility: visible;
+    }
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 43%;
+    box-shadow: inset 0 0 2000px rgba(49, 47, 47, 0.479);
+    background-color: rgba(22, 20, 20, 0.792);
+    color: #f9f9f9;
+    padding: 18px 10px;
+    margin: 12px 10px;
+    width: 80vw;
+    height: 450px;
+    border-radius: 12px;
+    translate: -50% -50%;
+    scale: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    top: 10px;
+}
+
+.content2 {
+    position: absolute;
+    display: flex;
+    top: 120px;
+    width: 90%;
+    height: 150px;
+    border: 1px;
+    border-style: solid;
+    border-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.content3 {
+    position: absolute;
+    display: flex;
+    top: 290px;
+    width: 90%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #f9f9f9;
+}
+
+#div-maletin {
+    background-color: #5298FF;
+    width: 60px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+#div-persona {
+    background-color: #7749F8;
+    width: 55px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+#persona-h2 {
+    color: #7749F8;
+}
+
+#maletin-h2 {
+    color: #5298FF;
+}
+
+.content-vertical {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.icon-atras>img {
+    rotate: 180deg;
+}
+
+.icon-atras {
+    display: flex;
+}
+
+.content-modal>h2 {
+    position: relative;
+    text-align: center;
+    top: 70px;
+}
+
+.div-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+
+}
+
+.div-flecha {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+#div-maletin>img,
+#div-persona>img {
+    width: 40px;
+    height: 45px;
+}
+
+.img-modal>img {
+    display: none;
+}
+
+body.open .modal {
+    opacity: 1;
+    visibility: visible;
+    animation: modal-in 0.3s;
+}
+
+@media (min-width: 1280px) {
+    .img-modal>img {
+        display: flex;
+        width: 300px;
+        height: 400px;
+    }
+
+    .modal-dialog {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 650px;
+    }
+
+    .content-modal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 18px 10px;
+        margin: 12px 10px;
+        width: 650px;
+        height: 450px;
+
+    }
+
+    .content1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        top: 10px;
+    }
+
+    .content2 {
+        position: absolute;
+        display: flex;
+        top: 120px;
+        width: 300px;
+        height: 150px;
+        border: 1px;
+        border-style: solid;
+        border-color: #f9f9f9;
+        border-radius: 10px;
+    }
+
+    .content3 {
+        position: absolute;
+        display: flex;
+        top: 290px;
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        border: 1px;
+        border-style: solid;
+        border-color: #f9f9f9;
+    }
+}
