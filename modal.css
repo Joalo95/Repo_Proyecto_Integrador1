@@ -3,7 +3,6 @@ body {
     width: 100vw;
     display: grid;
     place-items: center;
-    font-family: 'DMSans';
     background: transparent;
 }
 
@@ -129,7 +128,7 @@ body.open>.btn-ingresar {
 
 #div-persona {
     background-color: #7749F8;
-    width: 55px;
+    width: 60px;
     height: 150px;
     display: flex;
     align-items: center;
@@ -197,68 +196,74 @@ body.open .modal {
 }
 
 @media (min-width: 1280px) {
-    .img-modal>img {
+
+    .modal {
         display: flex;
-        width: 300px;
-        height: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 950px;
+        height: 500px;
     }
 
     .modal-dialog {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        width: 650px;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: 0px;
     }
 
     .content-modal {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
     }
 
-    .modal {
+    .img-modal>img {
         display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        padding: 18px 10px;
-        margin: 12px 10px;
-        width: 650px;
-        height: 450px;
-
+        width: 400px;
+        height: 500px;
+        border-radius: 12px 0 0 12px;
     }
 
     .content1 {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        top: 10px;
+        width: 470px;
     }
 
-    .content2 {
-        position: absolute;
-        display: flex;
-        top: 120px;
-        width: 300px;
-        height: 150px;
-        border: 1px;
-        border-style: solid;
-        border-color: #f9f9f9;
-        border-radius: 10px;
+    .content-modal>h2 {
+        text-align: center;
+        top: 30px;
     }
 
+    .content2,
     .content3 {
-        position: absolute;
         display: flex;
-        top: 290px;
-        width: 300px;
-        height: 150px;
-        border-radius: 10px;
-        border: 1px;
-        border-style: solid;
-        border-color: #f9f9f9;
+        justify-content: flex-start;
+        font-size: 0.8em;
+        width: 470px;
+    }
+
+    .content-vertical {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .div-flecha {
+        display: flex;
+        justify-content: flex-end;
+        padding: 8px;
+        margin-left: 375px;
     }
 }

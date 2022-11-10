@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https: //fonts.googleapis.com/css?family=DMSans" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Love-Ya-Like-A-Sister" rel="stylesheet">
 
     <link rel="stylesheet" media="(max-width: 390px)" href="template-style.css">
     <link rel="stylesheet" href="modal.css">
@@ -103,24 +103,32 @@
                 </div>
                 <div class="container-box">
                     <div class="box" id="box1">
-                        <img src="images/icono-mas.png" title="icon1" alt="" />
-                        <img src="images/icono-mano.png" title="icon2" alt="" />
-                        <h3>Ser Voluntario</h3>
+                        <div class="icon-mas"><img src="images/icono-mas.png" title="icon1" alt="" /></div>
+                        <div class="icon"><img src="images/icono-mano.png" title="icon2" alt="" /></div>
+                        <div class="box-text">
+                            <h3>Ser Voluntario</h3>
+                        </div>
                     </div>
                     <div class="box" id="box2">
-                        <img src="images/icono-mas.png" title="icon3" alt="" />
-                        <img src="images/icono-mano-corazon.png" title="icon4" alt="" />
-                        <h3>Donar</h3>
+                        <div class="icon-mas"><img src="images/icono-mas.png" title="icon3" alt="" /></div>
+                        <div class="icon"><img src="images/icono-mano-corazon.png" title="icon4" alt="" /></div>
+                        <div class="box-text">
+                            <h3>Donar</h3>
+                        </div>
                     </div>
                     <div class="box" id="box3">
-                        <img src="images/icono-mas.png" title="icon5" alt="" />
-                        <img src="images/icono-reciclar.png" title="icon6" alt="" />
-                        <h3>Reciclar</h3>
+                        <div class="icon-mas"><img src="images/icono-mas.png" title="icon5" alt="" /></div>
+                        <div class="icon"><img src="images/icono-reciclar.png" title="icon6" alt="" /></div>
+                        <div class="box-text">
+                            <h3>Reciclar</h3>
+                        </div>
                     </div>
                     <div class="box" id="box4">
-                        <img src="images/icono-mas.png" title="icon7" alt="" />
-                        <img src="images/icono-maletin.png" title="icon8" alt="" />
-                        <h3>Llamados laborales</h3>
+                        <div class="icon-mas"><img src="images/icono-mas.png" title="icon7" alt="" /></div>
+                        <div class="icon"><img src="images/icono-maletin.png" title="icon8" alt="" /></div>
+                        <div class="box-text">
+                            <h3>Llamados laborales</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,22 +294,27 @@
         </div>
         <div class="seccion-contacto">
             <div class="contacto-div">
-                <h2>Contacto</h2>
-                <form class="formulario">
+                <div>
+                    <h2>Contacto</h2>
+                </div>
+                <div class="formulario">
                     <div>
-                        <p class="form-nombre">Ingrese su nombre:</p>
-                        <input name="name" class="required" placeholder="Nombre" title="Your name" type="text" />
-
-                        <p class="form-email">Ingrese su correo:</p>
-                        <input name="mail" class="required" placeholder="correo@correo.com" title="Your mail"
-                            type="text" />
-
-                        <p class="form-mensaje">Ingrese su comentario:</p>
-                        <textarea name="message" class="required" placeholder="Su mensaje..." rows="3"></textarea>
-
-                        <button class="btn-enviar" type="submit">Enviar</button>
+                        <p class="form-p">Ingrese su nombre:</p>
+                        <input class="form-input" name="name" placeholder="nombre" title="Your name" type="text" />
                     </div>
-                </form>
+
+                    <div>
+                        <p class="form-p">Ingrese su correo:</p>
+                        <input class="form-input" name="mail" placeholder="correo" title="Your mail" type="text" />
+                    </div>
+
+                    <div>
+                        <p class="form-p">Ingrese su comentario:</p>
+                        <input class="form-input" name="message" placeholder="su mensaje..." title="Your message" />
+                    </div>
+
+                    <div><button class="btn-enviar" type="submit">Enviar</button></div>
+                </div>
             </div>
             <div class="contacto-img">
                 <div>
@@ -312,23 +325,25 @@
     </main>
 
     <footer>
-        <div class="footer-logo">
-            <img src="images/logo-blanco.png" title="logo-footer" />
-        </div>
-        <div class="footer-nav">
-            <ul>
-                <li>Nosotros</li>
-                <li>Noticias</li>
-                <li>Contacto</li>
-                <li>Terminos y condiciones</li>
-            </ul>
-        </div>
-        <div class="footer-social">
-            <p>Seguinos!</p>
-            <div>
-                <img src="images/icon-facebook.svg" title="icon-fb" />
-                <img src="images/icon-twitter.svg" title="icon-tw" />
-                <img src="images/icon-instagram.svg" title="icon-ig" />
+        <div class="horizontal">
+            <div class="footer-logo">
+                <img src="images/logo-blanco.png" title="logo-footer" />
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li>Nosotros</li>
+                    <li>Noticias</li>
+                    <li>Contacto</li>
+                    <li>Terminos y condiciones</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p>Seguinos!</p>
+                <div>
+                    <img src="images/icon-facebook.svg" title="icon-fb" />
+                    <img src="images/icon-twitter.svg" title="icon-tw" />
+                    <img src="images/icon-instagram.svg" title="icon-ig" />
+                </div>
             </div>
         </div>
         <div class="footer-final">
@@ -338,6 +353,9 @@
 
     <div class="modal" id="modal1">
         <div class="modal-dialog">
+            <div class="img-modal">
+                <img src="images/imagen-modal.JPG" title="img-modal" alt="img-modal" />
+            </div>
             <div class="content-modal">
                 <div class="content1">
                     <div class="icon-atras">
@@ -377,9 +395,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="img-modal">
-                <img src="images/imagen-modal.JPG" title="img-modal" alt="img-modal" />
             </div>
         </div>
     </div>
