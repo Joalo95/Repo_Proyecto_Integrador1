@@ -97,3 +97,35 @@
 #slide-4:checked~.control-4~.slide-indicador li:nth-child(4) .slide-circulo {
     color: #428bca;
 }
+
+@media (min-width: 1280px){
+
+    .slide, .slide-inner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 98vw;
+    }
+
+    .slide-open, .slide-indicador, .slide-circulo, .slide-control{
+        display: none;
+        visibility: hidden;
+    }
+
+    .seccion-noticias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card, .slide-item{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        opacity: 1;
+        z-index: 4;
+        margin: 10px;
+        width: 24vw;
+    }
+}
